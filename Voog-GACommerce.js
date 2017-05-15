@@ -1,7 +1,7 @@
 ga('require', 'ecommerce'); // We need Google Analytics to actually know what we want to do. Thus, give us Ecommerce!
 
 (function () {
-    $(document).on('voog:shoppingcart:show', (event) => {
+    document.addEventListener('voog:shoppingcart:show', (event) => {
         if(event.detail.view === "review") {
             let shoppingcart = Voog.ShoppingCart.getShoppingCartData();
             ga('ecommerce:clear'); // Existing unsent data from before? Make it dissapear
@@ -26,7 +26,7 @@ ga('require', 'ecommerce'); // We need Google Analytics to actually know what we
         }
     });
 
-    $(document).on('voog:shoppingcart:choosepaymentmethod', () => {
+    document.addEventListener('voog:shoppingcart:choosepaymentmethod', () => {
         ga('ecommerce:send');
     });
 })();
