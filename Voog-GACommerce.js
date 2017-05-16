@@ -15,7 +15,7 @@ ga('require', 'ecommerce'); // We need Google Analytics to actually know what we
             shoppingcart.items.forEach(function(item) {
                 ga('ecommerce:addItem', {
                     'id': shoppingcart.uuid,
-                    'name': item.name,
+                    'name': item.product.name,
                     'sku': item.product.name, // Yes, this is not a SKU, but the review view doesn't seem to have 'em...
                     'category': 'Product',
                     'price': item.product.price.toString(),
