@@ -7,7 +7,7 @@ Voog-GACommerce is a simple drop-in solution for tracking [Voog](https://voog.co
 
 You need to have GA set up on your site beforehand.
 
-* Download the script and upload it to your components folder in the editor. In `Settings` -> `Site`, add this inside the already present GA script tag under External stats, after `ga('send', 'pageview');`
+* Download the script and upload it to your scripts folder in the editor. In `Settings` -> `Site`, add this inside the already present GA script tag under External stats, after `ga('send', 'pageview');`
 
 ```
     var s = document.createElement( 'script' );
