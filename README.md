@@ -29,4 +29,4 @@ This is a snippet of JS code, that allows to view Voog E-commerce purchases in G
         ```js
         <script src="/javascripts/voog-gacommerce-tagmanager.js"></script>
         ```
-    
+**Note: This does not send you the SKU's that your store has defined. All SKU's show up as "Store Product" Voog does not let you access these via the shopping cart.**
