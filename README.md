@@ -9,7 +9,7 @@ This is a snippet of JS code, that allows to view Voog E-commerce purchases in G
 2. Enable E-commerce in your Google Analytics settings. The code does currently not support the enhanced version
 3. Include the appropriate JS file.
     ## Stand-alone Google Analytics
-    
+
     1. Download `voog-gacommerce-standalone.js` and upload it to your scripts folder in the Voog code editor.
     2. In `Settings` -> `Site`, add the following snippet inside the already present Google Analytics script tag under External stats, after `ga('send', 'pageview');`. This makes sure the snippet loads **after** Google Analytics is ready.
 
@@ -29,4 +29,4 @@ This is a snippet of JS code, that allows to view Voog E-commerce purchases in G
         ```js
         <script src="/javascripts/voog-gacommerce-tagmanager.js"></script>
         ```
-**Note: This does not send you the SKU's that your store has defined. All SKU's show up as the product name. All categories show up as "Store product", since Voog does not have categories.**
+**Note: All categories show up as "Store product", since Voog does not have categories.**
