@@ -4,7 +4,7 @@ let transactionData = {
     "event": "voog-gacommerce-send"
 }
 
-document.addEventListener('voog:shoppingcart:show', (event) => { 
+document.addEventListener('voog:shoppingcart:show', (event) => {
     if(event.detail.view === "review") {
         const shoppingCart = Voog.ShoppingCart.getContents();
         transactionData.transactionId = shoppingCart.uuid;
@@ -16,7 +16,7 @@ document.addEventListener('voog:shoppingcart:show', (event) => {
 
         shoppingCart.items.forEach(item => {
             let product = {};
-            product.sku = item.product_name; // Voog stll does not give sku's via the shopping cart
+            product.sku = item.product.sku;
             product.name = item.product_name;
             product.category = "Store product";
             product.price = item.amount;

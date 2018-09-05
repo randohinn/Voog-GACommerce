@@ -3,7 +3,7 @@ ga('require', 'ecommerce'); // We need Google Analytics to actually know what we
 (function () {
     document.addEventListener('voog:shoppingcart:show', (event) => {
         if(event.detail.view === "review") {
-            let shoppingcart = Voog.ShoppingCart.getShoppingCartData();
+            let shoppingcart = Voog.ShoppingCart.getContents();
             ga('ecommerce:clear'); // Existing unsent data from before? Make it dissapear
             ga('ecommerce:addTransaction', {
                 'id': shoppingcart.uuid,                                      // Transaction ID.
@@ -16,7 +16,7 @@ ga('require', 'ecommerce'); // We need Google Analytics to actually know what we
                 ga('ecommerce:addItem', {
                     'id': shoppingcart.uuid,
                     'name': item.product.name,
-                    'sku': "Store product", // Yes, this is not a SKU, but the review view doesn't seem to have 'em...
+                    'sku': item.product.sku,
                     'category': 'Product',
                     'price': item.product.price.toString(),
                     'quantity': item.quantity.toString(),
