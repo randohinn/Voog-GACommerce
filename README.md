@@ -10,7 +10,7 @@ This is a snippet of JS code, that allows to view Voog E-commerce purchases in G
 3. Include the appropriate JS file.
     ## Stand-alone Google Analytics
 
-    1. Download [`gacommerce.js`](Regular Ecommerce/gacommerce.js) and upload it to your scripts folder in the Voog code editor.
+    1. Download [`gacommerce.js`](Regular%20Ecommerce/gacommerce.js) and upload it to your scripts folder in the Voog code editor.
     2. In `Settings` -> `Site`, add the following snippet inside the already present Google Analytics script tag under External stats, after `ga('send', 'pageview');`. This makes sure the snippet loads **after** Google Analytics is ready.
 
         ```js
