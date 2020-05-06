@@ -25,7 +25,7 @@ Voog-GACommerce is a third-party drop-in javascript tool that allows to send and
     2. Configure your tag with the required fields.
     3. Set your trigger as a `Custom Event` with the name of `voog-gacommerce-send`. This is critical.
     4. Publish the tag.
-    5. Download `voog-gacommerce-tagmanager.js` and upload it to your scripts folder in the Voog code editor.
+    5. Download [`voog-gacommerce-tagmanager.js`](Google%20Tag%2Manager/gacommerce-tgm.js) and upload it to your scripts folder in the Voog code editor.
     6. Include this file in `Settings` -> `Site`, in the part that inserts content before the `</body>` tag.
         ```js
         <script src="/javascripts/voog-gacommerce-tagmanager.js"></script>
