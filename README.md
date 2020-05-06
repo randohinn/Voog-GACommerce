@@ -1,13 +1,14 @@
 # Voog-GACommerce
 [![Voog badge](https://img.shields.io/badge/Voog-voog.com-blue.svg)](https://voog.com)
 
-This is a snippet of JS code, that allows to view Voog E-commerce purchases in Google Analytics. It supports Google Tag Manager and standalone Google Analytics
+Voog-GACommerce is a third-party drop-in javascript tool that allows to send and track Voog E-commerce purchases in Google Analytics. Currently supports stanalone GA and Google Tag Manager. Work efforts are underway to support enhanced ecommere tracking.
 
 ## Setup
 
 1. Set up Google Analytics on your site.
 2. Enable E-commerce in your Google Analytics settings. The code does currently not support the enhanced version
 3. Include the appropriate JS file.
+
     ## Stand-alone Google Analytics
 
     1. Download [`gacommerce.js`](Regular%20Ecommerce/gacommerce.js) and upload it to your scripts folder in the Voog code editor.
